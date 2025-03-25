@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { TiLocationArrow } from "react-icons/ti";
 import FeatureCard from "./FeatureCard";
 
