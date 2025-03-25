@@ -4,9 +4,10 @@ import { useEffect, useRef } from "react";
 
 type Props = {
   title: string;
+  id?: string
   containerClass: string;
 };
-const Animated = ({ title, containerClass }: Props) => {
+const Animated = ({ title, containerClass , id}: Props) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -32,6 +33,7 @@ const Animated = ({ title, containerClass }: Props) => {
 
   return (
     <div
+    id={id}
       className={` mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem] animated-title ${containerClass}`}
       ref={containerRef}
     >
