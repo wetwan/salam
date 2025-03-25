@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { useGSAP } from "@gsap/react";
+
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
