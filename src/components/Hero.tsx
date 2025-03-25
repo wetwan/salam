@@ -142,7 +142,7 @@ const Hero = () => {
               Enetr the Frozen Food World
             </p>
             <Button
-              id="enter-shop"
+              id="contact"
               title="Enter Shop"
               leftIcon={<TiLocationArrow />}
               containerClass="!bg-yellow-300 flex-center gap-1"

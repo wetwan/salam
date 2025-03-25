@@ -54,6 +54,7 @@ const FeatureTilt = ({
 };
 
 const Feature = () => {
+ 
   return (
     <section id="feature" className="bg-black pb-52">
       <div className="container mx-auto px-3 md:px-10 \">

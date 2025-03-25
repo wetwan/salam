@@ -64,7 +64,7 @@ const Navbar = () => {
           <div className="flex items-center gap-7">
             <img src="/img/logo.png" alt="logo" className="w-10" />
             <Button
-              id="prodcut-button"
+              id="feature"
               title="prodcuts"
               rightIcon={<TiLocationArrow />}
               containerClass="!bg-blue-50 flex items-center justify-center gap-1"
