@@ -10,7 +10,7 @@ const Navbar = () => {
   const navContainerRef = useRef<HTMLDivElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  const navitems = ["Home", "store", "contact", "about"];
+  const navitems = ["Home", "about", "feature", "store", "contact"];
 
   const [lastScrollY, setLastScrollY] = useState<number>(0);
   const [isNavVisible, setIsNavVisible] = useState<boolean>(true);
@@ -42,7 +42,7 @@ const Navbar = () => {
     gsap.to(navContainerRef.current, {
       y: isNavVisible ? 0 : -100,
       opacity: isNavVisible ? 1 : 0,
-      duration: 0.2
+      duration: 0.2,
     });
   }, [isNavVisible]);
 
