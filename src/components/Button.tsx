@@ -17,16 +17,17 @@ const Button = ({
 }: Props) => {
   return (
     <a
-      href={id}
+      href={id ? `${id}` : ` tel:${phone}`}
       className={`${containerClass} group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black`}
       id={id}
     >
-      {leftIcon}{" "}
-      <span className="relative incline-flex overflow-hidden text-xs uppercase font-general">
-        {title && <div className="">{title}</div>}
-        {phone && <a href="tel:+"></a>}
-      </span>{" "}
-      <link rel="icon" type="image/png" href="img/logo.png" />
+      {leftIcon}
+      {title && (
+        <span className="relative incline-flex overflow-hidden text-xs uppercase font-general">
+          <div className="">{title}</div>
+        </span>
+      )}
+
       {rightIcon}
     </a>
   );

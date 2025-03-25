@@ -79,7 +79,7 @@ const Store = () => {
               discovered in this frozen food haven.
             </p>
             <Button
-              id="store-button"
+              id="contact"
               title="discover store"
               containerClass="mt-5"
             />
