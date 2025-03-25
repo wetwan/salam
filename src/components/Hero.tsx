@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import Button from "./Button";
 import { TiLocationArrow } from "react-icons/ti";
@@ -35,7 +34,6 @@ const Hero = () => {
     if (loadedVideo === totalvid - 1) {
       SetIsLoading(false);
     }
-
   }, [loadedVideo]);
 
   useGSAP(
@@ -83,7 +81,7 @@ const Hero = () => {
     });
   });
   return (
-    <div className=" relative h-dvh w-screen overflow-x-hidden">
+    <section id="home" className=" relative h-dvh w-screen overflow-x-hidden">
       {isLoading && (
         <div className=" flex-center absolute z-[100] h-dvh w-screen overflow-hidden">
           <div className="three-body">
@@ -155,7 +153,7 @@ const Hero = () => {
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black ">
         fr<b>oz</b>en f<b>oo</b>d
       </h1>
-    </div>
+    </section>
   );
 };
 

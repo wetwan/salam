@@ -5,19 +5,30 @@ type Props = {
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
   containerClass?: string;
+  phone?: string;
 };
-const Button = ({ id, title, leftIcon, rightIcon, containerClass }: Props) => {
+const Button = ({
+  id,
+  title,
+  phone,
+  leftIcon,
+  rightIcon,
+  containerClass,
+}: Props) => {
   return (
-    <div
+    <a
+      href={id}
       className={`${containerClass} group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black`}
       id={id}
     >
       {leftIcon}{" "}
       <span className="relative incline-flex overflow-hidden text-xs uppercase font-general">
-        <div className="">{title}</div>
-      </span>
+        {title && <div className="">{title}</div>}
+        {phone && <a href="tel:+"></a>}
+      </span>{" "}
+      <link rel="icon" type="image/png" href="img/logo.png" />
       {rightIcon}
-    </div>
+    </a>
   );
 };
 
